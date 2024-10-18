@@ -16,10 +16,10 @@ class WebCamera:
 
     def check_key_press(self):
         k = cv2.waitKey(1)
-        if k % 256 == 27:  # ESC pressed
+        if k % 256 == 27:  # ESC pressed, 27 is the ASCII code for the button 'Esc'
             print("Escape hit, closing...")
             return 'ESC'
-        elif k % 256 == 32:  # SPACE pressed
+        elif k % 256 == 32:  # SPACE pressed, 32 is the ASCII code for the button 'Space'
             return 'SPACE'
         return None
 
